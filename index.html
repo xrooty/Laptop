@@ -3,81 +3,83 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Laptop Configuration Pricing Request</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            background: #f9f9f9;
             color: #333;
             margin: 0;
-            padding: 0;
-            background-color: #fafafa;
+            padding: 20px;
         }
 
         .container {
             max-width: 960px;
             margin: auto;
-            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
         }
 
         .header {
-            background-color: #004080;
+            background: #003366;
             color: #fff;
-            padding: 30px 20px;
+            padding: 30px;
             text-align: center;
-            border-radius: 6px 6px 0 0;
         }
 
         .header h1 {
             margin: 0;
-            font-size: 28px;
+            font-size: 2em;
         }
 
         .content {
-            background-color: #fff;
-            padding: 30px 20px;
-            border: 1px solid #ddd;
-            border-top: none;
-            border-radius: 0 0 6px 6px;
+            padding: 30px;
         }
 
-        h2 {
-            color: #004080;
+        .content h2 {
+            color: #003366;
             margin-top: 0;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            margin: 20px 0;
             font-size: 0.95em;
         }
 
         th,
         td {
-            border: 1px solid #ccc;
-            padding: 12px 10px;
+            border: 1px solid #ddd;
+            padding: 12px;
             text-align: left;
         }
 
         th {
-            background-color: #f0f0f0;
+            background: #f0f0f0;
+        }
+
+        .highlight {
+            background: #e8f4ff;
         }
 
         ul {
-            margin-top: 15px;
+            margin: 20px 0;
+            padding-left: 1.2em;
         }
 
         .footer {
-            margin-top: 30px;
             font-size: 0.95em;
-            color: #444;
+            color: #555;
+            margin-top: 30px;
         }
 
         @media (max-width: 768px) {
             .header h1 {
-                font-size: 22px;
+                font-size: 1.5em;
             }
 
             table,
@@ -87,7 +89,7 @@
             }
 
             .content {
-                padding: 20px 10px;
+                padding: 20px;
             }
         }
     </style>
@@ -103,69 +105,118 @@
             <p>I am interested in receiving pricing for the following laptop configurations suitable for 4K video
                 editing:</p>
 
-            <div class="specs">
-                <h2>Requested Configurations:</h2>
-                <table>
-                    <tr>
-                        <th>Model</th>
-                        <th>Processor</th>
-                        <th>GPU</th>
-                        <th>RAM</th>
-                        <th>Storage</th>
-                    </tr>
-                    <tr>
-                        <td>Apple MacBook Pro 16″ (M3 Max)</td>
-                        <td>Apple M3 Max (16-core)</td>
-                        <td>40-core GPU</td>
-                        <td>128GB Unified</td>
-                        <td>2TB SSD</td>
-                    </tr>
-                    <tr>
-                        <td>Apple MacBook Pro 16″ (M4 Max)</td>
-                        <td>Apple M4 Max (16-core)</td>
-                        <td>40-core GPU</td>
-                        <td>128GB Unified</td>
-                        <td>2TB SSD</td>
-                    </tr>
-                    <tr>
-                        <td>Dell XPS 17</td>
-                        <td>Intel Core i9 (14th Gen)</td>
-                        <td>NVIDIA RTX 4080 (12GB)</td>
-                        <td>64GB DDR5</td>
-                        <td>2TB SSD</td>
-                    </tr>
-                    <tr>
-                        <td>Asus ProArt P16 H7606</td>
-                        <td>Ryzen AI 9 HX 370</td>
-                        <td>NVIDIA RTX 4070/5070</td>
-                        <td>64GB RAM</td>
-                        <td>2TB SSD</td>
-                    </tr>
-                    <tr>
-                        <td>Acer Predator Helios 18P AI</td>
-                        <td>Intel Core Ultra 9 285HX</td>
-                        <td>NVIDIA RTX 5090</td>
-                        <td>32GB DDR5</td>
-                        <td>2TB SSD</td>
-                    </tr>
-                </table>
-            </div>
+            <h2>Requested Configurations:</h2>
+            <table>
+                <tr>
+                    <th>Model</th>
+                    <th>Processor</th>
+                    <th>GPU</th>
+                    <th>RAM</th>
+                    <th>Storage</th>
+                </tr>
+                <tr>
+                    <td>Apple MacBook Pro 16″ (M3 Max)</td>
+                    <td>Apple M3 Max (16‑core)</td>
+                    <td>40‑core GPU</td>
+                    <td>128 GB Unified</td>
+                    <td>2 TB SSD</td>
+                </tr>
+                <tr>
+                    <td>Apple MacBook Pro 16″ (M4 Max)</td>
+                    <td>Apple M4 Max (16‑core)</td>
+                    <td>40‑core GPU</td>
+                    <td>128 GB Unified</td>
+                    <td>2 TB SSD</td>
+                </tr>
+                <tr>
+                    <td>Dell XPS 17</td>
+                    <td>Intel Core i9 (14th Gen)</td>
+                    <td>NVIDIA RTX 4080 (12 GB) (or any NVIDIA)</td>
+                    <td>32 GB (minimum) – 64 GB (recommended)</td>
+                    <td>1 TB (minimum) – 2 TB (recommended)</td>
+                </tr>
+                <tr class="highlight">
+                    <td><strong>ASUS TUF Gaming</strong></td>
+                    <td>Ryzen 7 7735HS or Ryzen 9 7940HS</td>
+                    <td>RTX 4090 NVIDIA (or any NVIDIA)</td>
+                    <td>32 GB (minimum) – 64 GB (recommended)</td>
+                    <td>1 TB (minimum) – 2 TB (recommended)</td>
+                </tr>
+                <tr>
+                    <td>HP VICTUS 15 FA0031DX</td>
+                    <td>12th Gen Core i5 (Octa‑Core)</td>
+                    <td>NVIDIA GTX 1650 (or any NVIDIA)</td>
+                    <td>32 GB (minimum) – 64 GB (recommended)</td>
+                    <td>1 TB (minimum) – 2 TB (recommended)</td>
+                </tr>
+                <tr>
+                    <td>ASUS ROG Zephyrus G14</td>
+                    <td>Ryzen 7 5800HS</td>
+                    <td>NVIDIA GeForce RTX 3060 6 GB GDDR6 (or any NVIDIA)</td>
+                    <td>32 GB (minimum) – 64 GB (recommended)</td>
+                    <td>1 TB (minimum) – 2 TB (recommended)</td>
+                </tr>
+                <tr>
+                    <td>MSI Sword 15</td>
+                    <td>12th Gen Core i7 (10‑Core)</td>
+                    <td>NVIDIA GeForce RTX 3060 6 GB GDDR6 (or any NVIDIA)</td>
+                    <td>32 GB (minimum) – 64 GB (recommended)</td>
+                    <td>1 TB (minimum) – 2 TB (recommended)</td>
+                </tr>
+                <tr>
+                    <td>Acer Predator Helios 300</td>
+                    <td>12th Gen Core i7 (Tetradeca‑Core)</td>
+                    <td>NVIDIA GeForce RTX 3060 6 GB GDDR6 (or any NVIDIA)</td>
+                    <td>32 GB (minimum) – 64 GB (recommended)</td>
+                    <td>1 TB (minimum) – 2 TB (recommended)</td>
+                </tr>
+                <tr class="highlight">
+                    <td><strong>Lenovo LEGION 5 Gen 7</strong></td>
+                    <td>Ryzen 7 6800H</td>
+                    <td>NVIDIA GeForce RTX 3060 6 GB GDDR6 (or any NVIDIA)</td>
+                    <td>32 GB (minimum) – 64 GB (recommended)</td>
+                    <td>1 TB (minimum) – 2 TB (recommended)</td>
+                </tr>
+                <tr>
+                    <td>ROG Zephyrus G16</td>
+                    <td>Ryzen™ AI 7 350</td>
+                    <td>GeForce RTX 5070 Laptop GPU (or any NVIDIA)</td>
+                    <td>32 GB (minimum) – 64 GB (recommended)</td>
+                    <td>1 TB (minimum) – 2 TB (recommended)</td>
+                </tr>
+                <tr>
+                    <td>HP Victus (alt.)</td>
+                    <td>Ryzen 7 7445HS</td>
+                    <td>NVIDIA GeForce RTX 4050 6 GB GDDR6</td>
+                    <td>16 GB (minimum) – 32 GB (recommended)</td>
+                    <td>512 GB SSD (min) – 1 TB (rec.)</td>
+                </tr>
+            </table>
 
             <p>Please provide pricing information for these configurations, including:</p>
             <ul>
                 <li>Base price for each configuration</li>
-                <li>Any available customization options</li>
-                <li>Warranty information</li>
+                <li>Customization options</li>
+                <li>Warranty details</li>
                 <li>Educational discounts (if applicable)</li>
             </ul>
 
-            <p>If you have any other customized laptop options suitable for 4K video editing, kindly let me know. I
-                prefer configurations with <strong>AMD processors</strong> and a <strong>NVIDIA graphics card</strong>
-                as a requirement.</p>
+            <p><strong>Please note my system requirements:</strong></p>
+            <ul>
+                <li>Minimum RAM: 16 GB — <em>32 GB recommended</em> (or 64 GB for heavier workloads)</li>
+                <li>SSD Storage: Minimum 1 TB — <em>2 TB recommended</em></li>
+                <li>GPU: At least GTX 1080 — <em>RTX 2070 / 4090 / 5090 recommended</em></li>
+                <li>CPU: Preferably AMD <strong>HS</strong> or <strong>HX</strong> series processors</li>
+                <li>GPU Brand: <strong>Only NVIDIA GPUs</strong> (no AMD graphics)</li>
+            </ul>
+
+            <p>If you have any other customized laptop options from any company suited for <strong>4K video
+                    editing</strong>, especially those with <strong>AMD HS/HX processors</strong> and <strong>NVIDIA
+                    GPUs</strong>, kindly let me know.</p>
+
 
             <div class="footer">
-                <p>Best regards,<br>
-                    Student</p>
+                <p>Best regards,<br>Student</p>
             </div>
         </div>
     </div>
